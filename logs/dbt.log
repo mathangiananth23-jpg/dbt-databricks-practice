@@ -1,0 +1,89 @@
+[0m16:17:51.447561 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F527EC3EB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F52A2390C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F52A238E50>]}
+
+
+============================== 16:17:51.478855 | 0ed79a91-7b14-4825-8fb7-6901c9a6c4c3 ==============================
+[0m16:17:51.478855 [info ] [MainThread]: Running with dbt=1.11.6
+[0m16:17:51.478855 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Math\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m16:17:51.714928 [info ] [MainThread]: dbt version: 1.11.6
+[0m16:17:51.714928 [info ] [MainThread]: python version: 3.10.2
+[0m16:17:51.730576 [info ] [MainThread]: python path: c:\users\math\pycharmprojects\student-rag-demo\venv\scripts\python.exe
+[0m16:17:51.730576 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m16:17:59.058087 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m16:17:59.058087 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m16:17:59.066085 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m16:18:08.333809 [info ] [MainThread]: Using profiles dir at C:\Users\Math\.dbt
+[0m16:18:08.333809 [info ] [MainThread]: Using profiles.yml file at C:\Users\Math\.dbt\profiles.yml
+[0m16:18:08.333809 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Math\PycharmProjects\student-rag-demo\dbt_project.yml
+[0m16:18:08.333809 [info ] [MainThread]: adapter type: databricks
+[0m16:18:08.349457 [info ] [MainThread]: adapter version: 1.11.5
+[0m16:18:08.349457 [info ] [MainThread]: Configuration:
+[0m16:18:08.349457 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:18:08.349457 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:18:08.349457 [info ] [MainThread]: Required dependencies:
+[0m16:18:08.349457 [debug] [MainThread]: Executing "git --help"
+[0m16:18:08.411955 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m16:18:08.411955 [info ] [MainThread]: Connection:
+[0m16:18:08.411955 [info ] [MainThread]:   host: https://dbc-f3cfc325-bc54.cloud.databricks.com
+[0m16:18:08.411955 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/79561d0bd39bbf4f
+[0m16:18:08.427553 [info ] [MainThread]:   catalog: hive_metastore
+[0m16:18:08.427553 [info ] [MainThread]:   schema: default
+[0m16:18:08.427553 [info ] [MainThread]: Registered adapter: databricks=1.11.5
+[0m16:18:10.599392 [warn ] [MainThread]: [[33mWARNING[0m]: Use managed Iceberg tables when table_format is iceberg. When this flag is disabled, UniForm is used instead.
+You may opt into the new behavior sooner by setting `flags.use_managed_iceberg` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m16:18:10.599392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '0ed79a91-7b14-4825-8fb7-6901c9a6c4c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F52CC98D90>]}
+[0m16:18:10.615016 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m16:18:10.615016 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m16:18:10.615016 [debug] [MainThread]: Using databricks connection "debug"
+[0m16:18:10.615016 [debug] [MainThread]: On debug: select 1 as id
+[0m16:18:10.615016 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:18:12.434064 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f116ee-79c7-1e70-a006-aa0fcace583b) - Created
+[0m16:18:15.651769 [debug] [MainThread]: SQL status: OK in 5.040 seconds
+[0m16:18:15.668862 [debug] [MainThread]: Databricks adapter: Cursor(session-id=01f116ee-79c7-1e70-a006-aa0fcace583b, command-id=01f116ee-7a03-1737-8a07-a6ccea6c75ac) - Closing
+[0m16:18:15.668862 [debug] [MainThread]: On debug: Close
+[0m16:18:15.668862 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f116ee-79c7-1e70-a006-aa0fcace583b) - Closing
+[0m16:18:16.119806 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:18:16.119806 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m16:18:16.135430 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\Math\PycharmProjects\student-rag-demo\dbt_project.yml> not found
+
+[0m16:18:16.135430 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m16:18:16.135430 [debug] [MainThread]: Command `dbt debug` failed at 16:18:16.135430 after 25.01 seconds
+[0m16:18:16.135430 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F527EC3EB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F52A2014B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F529C19060>]}
+[0m16:18:16.135430 [debug] [MainThread]: Flushing usage events
+[0m16:18:18.042147 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:19:35.916532 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024EE7233E80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024EE95A43D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024EE95A41F0>]}
+
+
+============================== 16:19:35.932181 | 42b46190-e876-47c8-921d-cf17e57e5363 ==============================
+[0m16:19:35.932181 [info ] [MainThread]: Running with dbt=1.11.6
+[0m16:19:35.932181 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Math\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt init student_project', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m16:19:35.979651 [debug] [MainThread]: Starter project path: c:\users\math\pycharmprojects\student-rag-demo\venv\lib\site-packages\dbt\include\starter_project
+[0m16:19:36.081956 [info ] [MainThread]: 
+Your new dbt project "student_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:19:36.081956 [info ] [MainThread]: Setting up your profile.
+[0m16:19:53.931718 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m16:19:53.931718 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m16:19:53.931718 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m16:25:27.791296 [info ] [MainThread]: Profile student_project written to C:\Users\Math\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m16:25:27.801307 [debug] [MainThread]: Command `dbt init` succeeded at 16:25:27.801307 after 352.02 seconds
+[0m16:25:27.801307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024EE7233E80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024EE95A35E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024EE95A4190>]}
+[0m16:25:27.801307 [debug] [MainThread]: Flushing usage events
+[0m16:25:29.385264 [debug] [MainThread]: An error was encountered while trying to flush usage events
