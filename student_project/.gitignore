@@ -2,4 +2,6 @@
 target/
 dbt_packages/
 logs/
+venv/
+.env
 config.py
