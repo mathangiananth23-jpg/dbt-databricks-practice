@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: tpch
+    database: samples
+    schema: tpch
+    tables:
+      - name: orders
+        description: "Raw orders data from TPCH sample dataset"
+      - name: customer
+        description: "Raw customer data from TPCH sample dataset"
